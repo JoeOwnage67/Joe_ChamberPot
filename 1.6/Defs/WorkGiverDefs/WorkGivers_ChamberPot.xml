@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <WorkGiverDef>
+    <defName>EmptyChamberPotWork</defName>
+    <label>empty chamber pot</label>
+    <giverClass>Joe_ChamberPot.WorkGiver_EmptyChamberPot</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>98</priorityInType>
+    <verb>empty</verb>
+    <gerund>emptying</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+      <defName>WardenEmptyChamberPotWork</defName>
+      <label>empty chamber pot</label>
+      <giverClass>Joe_ChamberPot.WorkGiver_EmptyChamberPot</giverClass>
+      <workType>Warden</workType>
+      <verb>empty</verb>
+      <gerund>emptying</gerund>
+      <priorityInType>98</priorityInType>
+      <requiredCapacities>
+        <li>Manipulation</li>
+      </requiredCapacities>
+    </WorkGiverDef>
+  </Defs>
