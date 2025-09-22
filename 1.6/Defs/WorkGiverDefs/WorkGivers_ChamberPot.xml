@@ -4,7 +4,7 @@
     <defName>EmptyChamberPotWork</defName>
     <label>empty chamber pot</label>
     <giverClass>Joe_ChamberPot.WorkGiver_EmptyChamberPot</giverClass>
-    <workType>Hauling</workType>
+    <workType>Cleaning</workType>
     <priorityInType>98</priorityInType>
     <verb>empty</verb>
     <gerund>emptying</gerund>

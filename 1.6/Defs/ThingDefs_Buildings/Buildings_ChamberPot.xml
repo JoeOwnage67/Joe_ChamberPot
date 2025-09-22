@@ -44,4 +44,50 @@
     <tickerType>Rare</tickerType>
     <drawerType>MapMeshAndRealTime</drawerType>
   </ThingDef>
+
+  <!-- Chamber Pot with Lid ThingDef -->
+  <ThingDef ParentName="BasedFixture">
+    <defName>ChamberPotLidded</defName>
+    <label>chamber pot with lid</label>
+    <description>A simple, portable non‑plumbed chamber pot, with a lid. Holds up to two uses. If left unemptied for several hours it begins to emit a foul stench that upsets nearby people.</description>
+    <thingClass>Joe_ChamberPot.building_chamberpot</thingClass>
+    <graphicData>
+      <texPath>DBH/Things/Building/ChamberPot/ChamberPotLidded</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shaderType>Cutout</shaderType>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>80</WorkToBuild>
+      <Flammability>1.5</Flammability>
+      <Mass>2</Mass>
+      <!-- No static Beauty/Cleanliness penalty: only while smelly -->
+    </statBases>
+    <stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+    <comps>
+      <li Class="Joe_ChamberPot.CompProperties_ChamberPot">
+        <maxUses>2</maxUses>
+        <smellDelayTicks>15000</smellDelayTicks>
+        <smellRadius>5</smellRadius>
+        <memoryDurationTicks>10000</memoryDurationTicks>
+        <gasCap>40</gasCap>
+        <gasPerPulse>10</gasPerPulse>        
+      </li>      
+    </comps>
+    <designationCategory>Hygiene</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tickerType>Rare</tickerType>
+    <drawerType>MapMeshAndRealTime</drawerType>
+  </ThingDef>
+
 </Defs>
