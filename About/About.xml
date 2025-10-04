@@ -20,7 +20,8 @@
 	<modDependencies>
 		<li>
 			<packageId>dubwise.dubsbadhygiene</packageId>
-			<displayName>Dubs Bad Hygiene</displayName>
+			<displayName>Dubs Bad Hygiene</displayName>			
+      		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=836308268</steamWorkshopUrl>
     	</li>		 
 	</modDependencies>
 
